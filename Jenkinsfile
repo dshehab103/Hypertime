@@ -11,13 +11,13 @@ pipeline {
         }
         stage('Build production file'){
             steps{
-                sh 'cd hypertime-frontend && npm run build && cd..'
+                sh 'cd hypertime-frontend && npm run build && cd ..'
             }
         }
         
         stage('Test') {
             steps {
-                sh 'cd hypertime-frontend && npm run testecho && cd..'
+                sh 'cd hypertime-frontend && npm run testecho && cd ..'
             }
         }
         
