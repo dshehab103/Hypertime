@@ -17,14 +17,10 @@ pipeline {
         
         stage('Test') {
             steps {
-                sh 'cd hypertime-frontend && npm run testecho && cd ..'
+                sh 'cd hypertime-frontend && npm run test && cd ..'
             }
         }
         
-        stage('Deploy') {
-            steps {
-                echo 'Deploying....'
-            }
-        }
+        
     }
 }

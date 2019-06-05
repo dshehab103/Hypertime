@@ -31,10 +31,7 @@ const AppWrapper = styled.div`
 export default function App() {
   return (
     <AppWrapper>
-      <Helmet
-        titleTemplate="Hypertime"
-        defaultTitle="Hypertime"
-      >
+      <Helmet titleTemplate="Hypertime" defaultTitle="Hypertime">
         <meta name="description" content="Brows git repos" />
       </Helmet>
       <Header />
