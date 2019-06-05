@@ -6,18 +6,18 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                bat 'cd hypertime-frontend && npm install && cd ..'
+                sh 'cd hypertime-frontend && npm install && cd ..'
             }
         }
         stage('Build production file'){
             steps{
-                bat 'cd hypertime-frontend && npm run build && cd..'
+                sh 'cd hypertime-frontend && npm run build && cd..'
             }
         }
         
         stage('Test') {
             steps {
-                bat 'cd hypertime-frontend && npm run testecho && cd..'
+                sh 'cd hypertime-frontend && npm run testecho && cd..'
             }
         }
         
