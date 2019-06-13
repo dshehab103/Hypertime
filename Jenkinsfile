@@ -22,7 +22,7 @@ pipeline {
         }
         stage('Test echo') {
             steps {
-                sh “echo \"${env.WORKSPACE}\“/hypertime-frontend/build"
+                sh "echo \"${env.WORKSPACE}\“/hypertime-frontend/build"
             }
         }
         stage('devlop') {
